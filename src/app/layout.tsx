@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Open_Sans, Roboto } from "next/font/google"; // Import both fonts
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/Footer";
 
 // Import Open Sans and Roboto Google fonts
 const openSans = Open_Sans({
@@ -30,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} ${roboto.variable} antialiased`} // Apply both fonts
       >
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

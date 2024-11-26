@@ -17,11 +17,11 @@ type Menubar = {
 
 const menubar: Menubar[] = [
   { id: 1, label: "Home", link: "/" },
-  { id: 2, label: "About Us", link: "/#" },
-  { id: 3, label: "Services", link: "/#" },
-  { id: 4, label: "Careers", link: "/#" },
-  { id: 5, label: "Sectors", link: "/#" },
-  { id: 6, label: "Contact Us", link: "/#" },
+  { id: 2, label: "About Us", link: "/about-us" },
+  { id: 3, label: "Services", link: "/services" },
+  { id: 4, label: "Careers", link: "/careers" },
+  { id: 5, label: "Sectors", link: "/sector" },
+  { id: 6, label: "Contact Us", link: "/contact-us" },
   { id: 7, label: "Project", link: "/#" },
   { id: 8, label: "Notice Board", link: "/#" },
 ];
@@ -53,7 +53,7 @@ const Navbar = () => {
     <Link
       key={menu.id}
       href={menu.link}
-      className={`text-sm ml-3 font-bold transition-all duration-150 hover:text-[#60D66A] ${
+      className={`text-base ml-4 font-bold transition-all duration-150 hover:text-[#60D66A] ${
         pathName === menu.link
           ? "bg-gradient-to-r from-[#20B038] to-[#60D66A] text-transparent bg-clip-text"
           : "text-black font-normal"

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 
 // Define types for props
@@ -11,34 +11,40 @@ type CounterData = {
 };
 
 const Counter: React.FC = () => {
-  const counters: CounterData[] = [
-    {
-      img: "/counter/counter1.png",
-      target: 250,
-      label: "Successful Projects",
-      suffix: "k+",
-    },
-    {
-      img: "/counter/counter2.png",
-      target: 600,
-      label: "Dedicated Employees",
-      suffix: "+",
-    },
-    {
-      img: "/counter/counter3.png",
-      target: 10,
-      label: "Happy Clients",
-      suffix: "k+",
-    },
-    {
-      img: "/counter/counter4.png",
-      target: 250,
-      label: "Partner with us",
-      suffix: "+",
-    },
-  ];
+  // Memoize the counters array to avoid re-creation on each render
+  const counters: CounterData[] = useMemo(
+    () => [
+      {
+        img: "/counter/counter1.png",
+        target: 250,
+        label: "Successful Projects",
+        suffix: "k+",
+      },
+      {
+        img: "/counter/counter2.png",
+        target: 600,
+        label: "Dedicated Employees",
+        suffix: "+",
+      },
+      {
+        img: "/counter/counter3.png",
+        target: 10,
+        label: "Happy Clients",
+        suffix: "k+",
+      },
+      {
+        img: "/counter/counter4.png",
+        target: 250,
+        label: "Partner with us",
+        suffix: "+",
+      },
+    ],
+    [] // Empty dependency array ensures this array is created only once
+  );
 
-  const [counts, setCounts] = useState<number[]>(new Array(counters.length).fill(0));
+  const [counts, setCounts] = useState<number[]>(
+    new Array(counters.length).fill(0)
+  );
 
   useEffect(() => {
     const duration = 3000; // Total animation duration in milliseconds
@@ -70,14 +76,17 @@ const Counter: React.FC = () => {
     }, 50); // Update every 50ms
 
     return () => clearInterval(timer); // Cleanup on unmount
-  }, [counts,counters]);
+  }, [counts, counters]);
 
   return (
     <section className="py-5 md:py-10 bg-[#2B5240]">
       <div className="max-w-6xl mx-auto">
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {counters.map((counter, index) => (
-            <div key={index} className="flex gap-3 justify-start  items-center">
+            <div
+              key={index}
+              className="flex gap-3 justify-start items-center"
+            >
               {/* Counter Image */}
               <Image
                 src={counter.img}
@@ -89,11 +98,13 @@ const Counter: React.FC = () => {
               <div>
                 {/* Animated Counter */}
                 <h4 className="text-[40px] font-bold text-white">
-                  {counts[index].toLocaleString()}
+                  {Math.floor(counts[index]).toLocaleString()}
                   {counter.suffix}
                 </h4>
                 {/* Label */}
-                <p className="text-base text-white font-normal">{counter.label}</p>
+                <p className="text-base text-white font-normal">
+                  {counter.label}
+                </p>
               </div>
             </div>
           ))}
