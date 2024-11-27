@@ -92,6 +92,8 @@ const Footer: React.FC = () => {
     <a href="/sector#tourism" className="font-normal text-sm text-white mt-2">Tourism Infrastructure</a>
     <a href="/sector#architecture" className="font-normal text-sm text-white mt-2">Architecture</a>
 
+    <a href="/sector#international" className="font-normal text-sm text-white mt-2">International Projects</a>
+
     </div>
     </div>
     <div className="basis-full md:basis-1/6  p-2">
