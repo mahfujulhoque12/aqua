@@ -4,7 +4,7 @@ import Image from "next/image";
 import logo from '/public/logo/logo.png';
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import { AiFillGoogleCircle } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 import { AiOutlineHome } from "react-icons/ai";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
@@ -37,16 +37,16 @@ const Footer: React.FC = () => {
        
       
         <Link href="#">
-        <FaSquareFacebook size={25} className="text-blue-400"/>
+        <FaSquareFacebook size={25} className="text-white"/>
          </Link>
             <Link href="#"> 
-            <FaLinkedin size={25} className="text-blue-500"/>
+            <FaLinkedin size={25} className="text-white"/>
             </Link>
             <Link href="#"> 
-              <FcGoogle size={25}/>
+              <AiFillGoogleCircle size={25} className="text-white"/>
             </Link>
             <Link href="#"> 
-        <FaInstagramSquare size={25} className="text-pink-600"/>
+        <FaInstagramSquare size={25} className="ttext-white"/>
 
             </Link>
 
@@ -58,13 +58,13 @@ const Footer: React.FC = () => {
     <p className="text-base font-semibold text-white">Our Company</p>
 
    <div className="flex flex-col mt-5 md:mt-10">
-   <Link href="#" className="font-normal text-sm text-white">About Us</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Services</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Careers</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Sectors</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Contact Us</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Project</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Notice Board</Link>
+   <Link href="/about-us" className="font-normal text-sm text-white">About Us</Link>
+    <Link href="/services" className="font-normal text-sm text-white mt-2">Services</Link>
+    <Link href="/careers" className="font-normal text-sm text-white mt-2">Careers</Link>
+    <Link href="/sector" className="font-normal text-sm text-white mt-2">Sectors</Link>
+    <Link href="/contact-us" className="font-normal text-sm text-white mt-2">Contact Us</Link>
+    <Link href="/project" className="font-normal text-sm text-white mt-2">Project</Link>
+    <Link href="/notice" className="font-normal text-sm text-white mt-2">Notice Board</Link>
    </div>
 
     </div>
@@ -72,25 +72,25 @@ const Footer: React.FC = () => {
     <p className="text-base font-semibold text-white">Our Links</p>
 
     <div className="flex flex-col mt-5 md:mt-10">
-   <Link href="#" className="font-normal text-sm text-white">View Account</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">History</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Company Facts</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Organization</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Vision-mission-values</Link>
+   <Link href="/about-us" className="font-normal text-sm text-white">View Account</Link>
+    <Link href="/about-us" className="font-normal text-sm text-white mt-2">History</Link>
+    <Link href="/about-us" className="font-normal text-sm text-white mt-2">Company Facts</Link>
+    <Link href="/about-us" className="font-normal text-sm text-white mt-2">Organization</Link>
+    <Link href="/about-us" className="font-normal text-sm text-white mt-2">Vision-mission-values</Link>
    </div>
     </div>
     <div className="basis-full md:basis-1/6 p-2">
     <p className="text-base font-semibold text-white">Sectors</p>
 
     <div className="flex flex-col mt-5 md:mt-10">
-    <Link href="#" className="font-normal text-sm text-white">Water Supply</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Sewerage</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Storm Water</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Solid Waste</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">NRW and Leak Detection</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Roads and Bridges</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Tourism Infrastructure</Link>
-    <Link href="#" className="font-normal text-sm text-white mt-2">Architecture</Link>
+    <a href="/sector#water" className="font-normal text-sm text-white">Water Supply</a>
+    <a href="/sector#sewerage" className="font-normal text-sm text-white mt-2">Sewerage</a>
+    <a href="/sector#storm" className="font-normal text-sm text-white mt-2">Storm Water</a>
+    <a href="/sector#solid" className="font-normal text-sm text-white mt-2">Solid Waste</a>
+    <a href="/sector#nrw" className="font-normal text-sm text-white mt-2">NRW and Leak Detection</a>
+    <a href="/sector#road" className="font-normal text-sm text-white mt-2">Roads and Bridges</a>
+    <a href="/sector#tourism" className="font-normal text-sm text-white mt-2">Tourism Infrastructure</a>
+    <a href="/sector#architecture" className="font-normal text-sm text-white mt-2">Architecture</a>
 
     </div>
     </div>

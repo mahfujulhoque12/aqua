@@ -22,8 +22,8 @@ const menubar: Menubar[] = [
   { id: 4, label: "Careers", link: "/careers" },
   { id: 5, label: "Sectors", link: "/sector" },
   { id: 6, label: "Contact Us", link: "/contact-us" },
-  { id: 7, label: "Project", link: "/#" },
-  { id: 8, label: "Notice Board", link: "/#" },
+  { id: 7, label: "Project", link: "/project" },
+  { id: 8, label: "Notice Board", link: "/notice" },
 ];
 
 const Navbar = () => {
@@ -40,6 +40,7 @@ const Navbar = () => {
       <div className=" flex justify-between items-center">
         {/* Logo */}
         <div>
+          <Link href="/">
           <Image
             src={logo}
             alt="img-logo"
@@ -47,6 +48,8 @@ const Navbar = () => {
             height={100}
             className="w-[37px] h-[37px] object-cover"
           />
+          </Link>
+         
         </div>
         <div className="hidden lg:block">
   {menubar.map((menu) => (

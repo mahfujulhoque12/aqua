@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
-import water1 from "/public/sector/water1.png";
-import water2 from "/public/sector/water2.png";
-import water3 from "/public/sector/water3.png";
-import water4 from "/public/sector/water4.png";
-import water5 from "/public/sector/water5.png";
-import water6 from "/public/sector/water6.png";
-import water7 from "/public/sector/water7.png";
+import water1 from "/public/sector/torisum1.png";
+import water2 from "/public/sector/torisum2.png";
+import water3 from "/public/sector/torisum3.png";
+import water4 from "/public/sector/torisum4.png";
+import water5 from "/public/sector/torisum5.png";
+import water6 from "/public/sector/torisum6.png";
+import water7 from "/public/sector/torisum1.png";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
 import {
@@ -72,7 +72,7 @@ const sectorData: SectorData[] = [
   },
 ];
 
-const Sector = () => {
+const Torisum = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<SectorData | null>(null);
 
@@ -87,32 +87,29 @@ const Sector = () => {
   };
 
   return (
-    <section className="py-5 md:py-10" id="water">
+    <section className="py-5 md:py-10" id="tourism">
       <MaxWidthWrapper>
         <div>
           <h2 className="w-full text-black font-semibold text-lg sm:text-xl md:text-[50px] font-roboto md:leading-[60px]">
-           Watter Supply
+          Tourism Infrastruction
           </h2>
           <p className="text-gray-500 mt-5 font-semibold text-sm md:text-base">
-            Auqa expertise covers all aspects of water supply from source
-            identification to providing water to the consumers. The major
-            disciplines covered in water supply are:
+          STC expertise covers all aspects of NRW and Leak Detection studies starting from Intake to WTP to transmission and distribution systems and all the way to customer property connections. The major disciplines covered in water audits and NRW studies are:
           </p>
+
           {/* List Items */}
-          <ul className="text-base font-medium text-gray-700 mt-3 space-y-3">
-            <li>Ground water potential studies and abstraction</li>
-            <li>Surface water abstraction and intake</li>
-            <li>Water pumping stations</li>
-            <li>Water treatment</li>
-            <li>Water transmission and cross country pipelines</li>
-            <li>Water supply tunnels</li>
-            <li>Water distribution and water balance studies</li>
-            <li>Water retaining structures</li>
-            <li>Rain water harvesting</li>
-            <li>Surge protection analysis</li>
-            <li>Cathodic and corrosion protection</li>
-            <li>Automation and SCADA studies</li>
-          </ul>
+  
+            <li  className="text-base font-medium text-gray-700 mt-3">Ground water potential studies and abstraction</li>
+            <li  className="text-base font-medium text-gray-700 mt-3">Surface water abstraction and intake</li>
+            <li  className="text-base font-medium text-gray-700 mt-3">Water pumping stations</li>
+            <li  className="text-base font-medium text-gray-700 mt-3">Water treatment</li>
+            <li  className="text-base font-medium text-gray-700 mt-3">Water transmission and cross country pipelines</li>
+        
+            <li  className="text-base font-medium text-gray-700 mt-3"> Power Generation from Waste gases</li>
+            
+            <li  className="text-base font-medium text-gray-700 mt-3">Privatization of  Solid waste management </li>
+            <li  className="text-base font-medium text-gray-700 mt-3">Scientific closure and Remediation of Contaminated  Landfill sites </li>
+
 
           <h3 className="text-lg md:text-2xl font-semibold text-black mt-5">
             Major Projects
@@ -182,4 +179,4 @@ const Sector = () => {
   );
 };
 
-export default Sector;
+export default Torisum;
