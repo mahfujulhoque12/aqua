@@ -87,14 +87,14 @@ const Sewerage = () => {
   };
 
   return (
-    <section className="py-5 md:py-10">
+    <section className="py-5 md:py-10" id="sewerage">
       <MaxWidthWrapper>
         <div>
           <h2 className="w-full text-black font-semibold text-lg sm:text-xl md:text-[50px] font-roboto md:leading-[60px]">
             Sewerage
           </h2>
           <p className="text-gray-500 mt-5 font-semibold text-sm md:text-base">
-            STC expertise covers all aspects of water supply from source
+            Auqa expertise covers all aspects of water supply from source
             identification to providing water to the consumers. The major
             disciplines covered in water supply are:
           </p>

@@ -11,7 +11,7 @@ const ServicesCom = () => {
             <h2 className="w-full text-black    font-semibold text-lg sm:text-xl md:text-[50px] font-roboto md:leading-[60px]">
             Services
             </h2>
-            <p className="text-gray-500 mt-4 font-semibold text-sm md:text-base">The broad services provided by STC and covering all aspects from concept to commissioning and extended later to asset management and rehabilitation are given below:</p>
+            <p className="text-gray-500 mt-4 font-semibold text-sm md:text-base">The broad services provided by Auqa and covering all aspects from concept to commissioning and extended later to asset management and rehabilitation are given below:</p>
 
             <li className='text-base font-medium text-gray-700 mt-6'>Soil investigations, topographical surveys, water quality assessment
             </li>
