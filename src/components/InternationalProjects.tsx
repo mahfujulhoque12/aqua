@@ -87,7 +87,7 @@ const InternationalProjects = () => {
   };
 
   return (
-    <section className="py-5 md:py-10">
+    <section className="py-5 md:py-10" id="international">
       <MaxWidthWrapper>
         <div>
           <h2 className="w-full text-black font-semibold text-lg sm:text-xl md:text-[50px] font-roboto md:leading-[60px]">
