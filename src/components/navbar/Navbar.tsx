@@ -23,7 +23,6 @@ const menubar: Menubar[] = [
   { id: 5, label: "Sectors", link: "/sector" },
   { id: 6, label: "Contact Us", link: "/contact-us" },
   { id: 7, label: "Project", link: "/project" },
-  { id: 8, label: "Notice Board", link: "/notice" },
 ];
 
 const Navbar = () => {
@@ -69,9 +68,9 @@ const Navbar = () => {
 
 
 <div>
-  <button className="bg-gradient-to-t from-[#20B038] to-[#60D66A] px-5 py-3 rounded font-semibold text-base text-white flex items-center gap-2 transition-all duration-500 hover:bg-gradient-to-t hover:from-[#1d623a] hover:to-[#20b14e]">
+  <Link href="/contact-us" className="bg-gradient-to-t from-[#20B038] to-[#60D66A] px-5 py-3 rounded font-semibold text-base text-white flex items-center gap-2 transition-all duration-500 hover:bg-gradient-to-t hover:from-[#1d623a] hover:to-[#20b14e]">
     Let&apos;s Talk <FaLongArrowAltRight size={20} />
-  </button>
+  </Link>
 </div>
 
 

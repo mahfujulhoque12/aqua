@@ -99,11 +99,14 @@ const StormWater = () => {
 
           {/* List Items */}
   
+            <div className="ms-3 md:ms-4">
+
             <li  className="text-base font-medium text-gray-700 mt-3">Ground water potential studies and abstraction</li>
             <li  className="text-base font-medium text-gray-700 mt-3">Surface water abstraction and intake</li>
             <li  className="text-base font-medium text-gray-700 mt-3">Water pumping stations</li>
             <li  className="text-base font-medium text-gray-700 mt-3">Water treatment</li>
             <li  className="text-base font-medium text-gray-700 mt-3">Water transmission and cross country pipelines</li>
+            </div>
          
     
 

@@ -98,7 +98,8 @@ const Torisum = () => {
           </p>
 
           {/* List Items */}
-  
+          <div className="ms-3 md:ms-4">
+
             <li  className="text-base font-medium text-gray-700 mt-3">Ground water potential studies and abstraction</li>
             <li  className="text-base font-medium text-gray-700 mt-3">Surface water abstraction and intake</li>
             <li  className="text-base font-medium text-gray-700 mt-3">Water pumping stations</li>
@@ -109,6 +110,8 @@ const Torisum = () => {
             
             <li  className="text-base font-medium text-gray-700 mt-3">Privatization of  Solid waste management </li>
             <li  className="text-base font-medium text-gray-700 mt-3">Scientific closure and Remediation of Contaminated  Landfill sites </li>
+          </div>
+  
 
 
           <h3 className="text-lg md:text-2xl font-semibold text-black mt-5">
