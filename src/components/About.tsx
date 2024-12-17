@@ -1,6 +1,8 @@
+"use client"
 import MaxWidthWrapper from '@/components/layout/MaxWidthWrapper'
 import about from '/public/about/about.jpg';
 import Image from 'next/image';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 type Data = {
     id:number;
@@ -20,11 +22,42 @@ const data:Data[] = [
   ];
 
 const About = () =>{
+  const pdf = '/example.pdf'
+
+  const handlePdf = () =>{
+    const link = document.createElement('a');
+    link.href = pdf;
+    link.download = 'example.pdf';
+    link.click();
+  }
+
     return (
         <section>
         <MaxWidthWrapper>
         <div>
-            <Image src={about} alt='img' width={1500} height={500} className='h-[450px] object-cover' />
+         
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+              <div>
+
+            <Image src={about} alt='img' width={1500} height={500} className='h-[350px] md:h-[500px] object-contain' />
+              </div>
+
+              <div className="flex flex-col justify-center ">
+                  <h2 className="w-full text-black mt-8   font-semibold text-lg sm:text-xl md:text-[50px] font-roboto md:leading-[60px]">
+                  Our Company
+                  </h2>
+                  <p className='text-base font-medium text-gray-700 mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus unde placeat, repellendus natus culpa blanditiis fugiat voluptate dolorem iste voluptatibus saepe, facere, ipsa asperiores consequatur provident nihil animi rem</p>
+
+                  <div className="mt-3">
+                    <button
+                    onClick={handlePdf}
+                     className="bg-gradient-to-t from-[#20B038] to-[#60D66A] px-5 py-3 rounded font-semibold text-base text-white flex items-center gap-2 transition-all duration-500 hover:bg-gradient-to-t hover:from-[#1d623a] hover:to-[#20b14e]">
+                      Download Company Profile <FaLongArrowAltRight size={20} />
+                    </button>
+                  </div>
+
+              </div>
+            </div>
 
 
             {/* history start */}
@@ -46,14 +79,15 @@ const About = () =>{
 
         {/* history end */}
 
-        {/* history start */}
+  
 
         {/* Company Facts start */}
         <h2 className="w-full text-black mt-8   font-semibold text-lg sm:text-xl md:text-[50px] font-roboto md:leading-[60px]">
         Company Facts
             </h2>
 
-            <li className='text-base font-medium text-gray-700 mt-3'>auqa is a firm providing specialized services in Infrastructure Consulting with a strong focus on Water and Wastewater sectors.
+           <div className='ms-3 md:ms-4'>
+           <li className='text-base font-medium text-gray-700 mt-3'>auqa is a firm providing specialized services in Infrastructure Consulting with a strong focus on Water and Wastewater sectors.
             </li>
             <li className='text-base font-medium text-gray-700 mt-3'>auqa is an ISO 9001-2015 QMS certified company with its main office in Mumbai.
             </li>
@@ -79,6 +113,7 @@ const About = () =>{
             </li>
             <li className='text-base font-medium text-gray-700 mt-3'>auqa is also focusing on the overseas outsourcing market for major contractors and consultants for services related to designs, drawings and estimation.
             </li>
+           </div>
 
 
         {/* Company Facts end */}
@@ -86,8 +121,8 @@ const About = () =>{
         {/* Organization start */}
         <h2 className="w-full text-black mt-8   font-semibold text-lg sm:text-xl md:text-[50px] font-roboto md:leading-[60px]">
         Organization
+      </h2>
 
-            </h2>
             <p className='text-base font-medium text-gray-700 mt-3'>auqa is a 100% family held Private Ltd Company.</p>
             <p className='text-base font-medium text-gray-700 mt-3'> auqa is guided by a Board of Directors consisting of representatives of major shareholders and professionals. The Board of Directors is headed by the Chairman. The Managing Director is supported by the Executive Director, Director (Operations), Director (Finance) and Director (HR). They are supported by three Vice Presidents each looking after one region.</p>
 
@@ -121,7 +156,7 @@ const About = () =>{
 <h3 className='underline text-lg mt-5 md:text-2xl text-gray-800 font-semibold '>Mission</h3>
 
 <p  className='text-base font-medium text-gray-700 mt-3'>auqa aims to constantly improve and innovate to have an organization that always provides.</p>
-      <div className='ms-0 md:ms-4 mt-5'>
+      <div className='ms-3 md:ms-4 mt-5'>
 
             <li className='text-base font-medium text-gray-700 mt-3' >our clients the best professional services with innovative and futuristic solutions at justifiable costs.
             </li>

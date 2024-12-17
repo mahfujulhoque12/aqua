@@ -24,7 +24,7 @@ const ContactForm = () => {
           <p className="font-semibold text-sm	uppercase  flex items-center justify-center gap-3">
             Contact Us <FaPaperPlane className="text-[#20B038]" />
           </p>
-          <h3 className="text-center mt-2 text-[50px] text-gray-700  font-bold">
+          <h3 className="text-center mt-2 text-xl md:text-[50px] text-gray-700  font-bold">
             Let’s Chat, Reach Out to us
           </h3>
           <p className=" text-base md:text-xl font-normal text-gray-600 w-[100%] md:w-[60%] mx-auto text-center mt-2">

@@ -194,7 +194,7 @@ const CarouselPrevious = React.forwardRef<
         variant={variant}
         size={size}
         className={cn(
-          "absolute  bg-black shadow-md  h-10 w-10 rounded-full hover:bg-[#232323] text-white",
+          "absolute  bg-green-500 shadow-md  h-10 w-10 rounded-full hover:bg-green-600  text-white",
           orientation === "horizontal"
           ?isSlider
           ?"left-[1%] top-1/2 -translate-y-1/2" 
@@ -226,7 +226,7 @@ const CarouselNext = React.forwardRef<
         variant={variant}
         size={size}
         className={cn(
-          "absolute bg-black shadow-md  h-10 w-10 rounded-full hover:bg-[#232323] text-white",
+          "absolute bg-green-500 shadow-md  h-10 w-10 rounded-full hover:bg-green-600 text-white",
           orientation === "horizontal"
           ? isSlider 
           ? "right-[1%] top-1/2 -translate-y-1/2" // Custom style for Slider

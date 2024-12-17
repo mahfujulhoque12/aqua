@@ -13,6 +13,8 @@ const ServicesCom = () => {
             </h2>
             <p className="text-gray-500 mt-4 font-semibold text-sm md:text-base">The broad services provided by Auqa and covering all aspects from concept to commissioning and extended later to asset management and rehabilitation are given below:</p>
 
+            <div className="ms-3 md:ms-4">
+
             <li className='text-base font-medium text-gray-700 mt-6'>Soil investigations, topographical surveys, water quality assessment
             </li>
             <li className='text-base font-medium text-gray-700 mt-3'>Condition Assessment like GPR / CCTV / NDT etc
@@ -49,6 +51,8 @@ const ServicesCom = () => {
             </li>
             <li className='text-base font-medium text-gray-700 mt-3'>Any other related services
             </li>
+          </div>
+
        
 
             </div>
