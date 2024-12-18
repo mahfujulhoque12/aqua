@@ -1,6 +1,7 @@
 "use client"
 import MaxWidthWrapper from '@/components/layout/MaxWidthWrapper'
-import about from '/public/about/about.jpg';
+import about2 from '/public/about/about2.png';
+
 import Image from 'next/image';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
@@ -37,9 +38,9 @@ const About = () =>{
         <div>
          
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-              <div>
+              <div className='rounded-md'>
 
-            <Image src={about} alt='img' width={1500} height={500} className='h-[350px] md:h-[500px] object-contain' />
+            <Image src={about2} alt='img' width={1500} height={500} className='h-[350px] md:h-[500px] object-contain ' />
               </div>
 
               <div className="flex flex-col justify-center ">

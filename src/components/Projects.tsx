@@ -62,6 +62,27 @@ const sectorData: SectorData[] = [
     title: "Automation and SCADA Studies",
     des:"Description about the project goes here. You can add more details if needed.",
   },
+  {
+    id: 8,
+    image: water2.src,
+    title: "Automation and SCADA Studies",
+    des:"Description about the project goes here. You can add more details if needed.",
+  },{
+    id: 9,
+    image: water3.src,
+    title: "Automation and SCADA Studies",
+    des:"Description about the project goes here. You can add more details if needed.",
+  },{
+    id: 10,
+    image: water4.src,
+    title: "Automation and SCADA Studies",
+    des:"Description about the project goes here. You can add more details if needed.",
+  },{
+    id: 11,
+    image: water6.src,
+    title: "Automation and SCADA Studies",
+    des:"Description about the project goes here. You can add more details if needed.",
+  },
 ];
 
 const Projects = () => {
@@ -88,8 +109,6 @@ const Projects = () => {
           <p className="text-gray-500 mt-5 font-semibold text-sm md:text-base">
           Auqa expertise covers all aspects of NRW and Leak Detection studies starting from Intake to WTP to transmission and distribution systems and all the way to customer property connections. The major disciplines covered in water audits and NRW studies are:
           </p>
-
-
 
           {/* Carousel */}
           
